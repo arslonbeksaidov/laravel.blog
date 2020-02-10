@@ -10,6 +10,6 @@ class PostController extends Controller
 {
     function all_post()
     {
-        return Cotegory::with('posts')->get();
+        return  Cotegory::with('posts')->get();
     }
 }
