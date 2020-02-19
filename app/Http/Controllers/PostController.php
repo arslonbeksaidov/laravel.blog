@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Cotegory;
+use App\Category;
 use App\Post;
 use Illuminate\Http\Request;
 
@@ -10,6 +10,7 @@ class PostController extends Controller
 {
     function all_post()
     {
-        return  Cotegory::with('posts')->get();
+        $posts = Post::with('user','category')->get();
+        return response()->json(['posts' => $posts],200);
     }
 }

@@ -22,7 +22,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="../../index3.html" class="nav-link">Home</a>
+                <router-link to="/home" class="nav-link">Home</router-link>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
@@ -175,22 +175,22 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="../../index.html" class="nav-link">
+                                <router-link to="/home" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Home</p>
-                                </a>
+                                </router-link>
                             </li>
                             <li class="nav-item">
-                                <a href="../../index2.html" class="nav-link">
+                                <router-link to="/post-list" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Posts</p>
-                                </a>
+                                </router-link>
                             </li>
                             <li class="nav-item">
-                                <a href="../../index3.html" class="nav-link">
+                                <router-link to="/category-list" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Categories</p>
-                                </a>
+                                </router-link>
                             </li>
                         </ul>
                     </li>
@@ -222,38 +222,13 @@
             </div><!-- /.container-fluid -->
         </section>
 
-        <!-- Main content -->
-        <section class="content">
+       <admin-main></admin-main>
 
-            <!-- Default box -->
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">Title</h3>
 
-                    <div class="card-tools">
-                        <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-                            <i class="fas fa-minus"></i></button>
-                        <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-                            <i class="fas fa-times"></i></button>
-                    </div>
-                </div>
-                <div class="card-body">
-                    Start creating your amazing application!
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                    Footer
-                </div>
-                <!-- /.card-footer-->
-            </div>
-            <!-- /.card -->
-
-        </section>
-        <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
 
-    <example-component></example-component>
+
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
             <b>Version</b> 3.0.3-pre

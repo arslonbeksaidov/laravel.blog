@@ -12,6 +12,6 @@ class Post extends Model
     }
     function category ()
     {
-        return $this->belongsTo(Cotegory::class,'cat_id');
+        return $this->belongsTo(Category::class,'cat_id');
     }
 }
